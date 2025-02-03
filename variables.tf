@@ -34,3 +34,14 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"  # Modifier selon tes besoins
 }
+
+variable "Copyaws_region" {
+  description = "AWS region to deploy resources"
+  type        = string
+  default     = "us-east-1" # Remplacez cette valeur si nécessaire ou laissez-la vide si elle est obligatoire dans dev.tfvars
+}
+
+variable "aws_account_id" {
+  description = "AWS account ID for resource configuration"
+  type        = string
+}
